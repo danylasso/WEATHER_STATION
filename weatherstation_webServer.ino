@@ -126,7 +126,7 @@ void loop(){
             client.println("Connection: close");
             client.println();
 
-            // turns the GPIOs on and off
+            /*/ turns the GPIOs on and off
             if (header.indexOf("GET /26/on") >= 0) {
               Serial.println("GPIO 26 on");
               output26State = "on";
@@ -143,7 +143,7 @@ void loop(){
               Serial.println("GPIO 27 off");
               output27State = "off";
               digitalWrite(output27, LOW);
-            }
+            }*/
 
             // Funciones de los LEDs de Alerta 
             // LED D26 ROJO
