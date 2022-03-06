@@ -34,11 +34,11 @@
 Adafruit_BMP280 bmp; // I2C
 
 // Reemplace con sus credenciales de red
-const char* ssid     = "FAMILIA LASSO";
-const char* password = "LASSO2603R2301";
+const char* ssid     = "TU RED WIFI";
+const char* password = "CONTRASEÑA WIFI";
 
 ////eg: 192.168.0.222
-char serverName[] = "192.168.0.19";   
+char serverName[] = "YOUR IP";   
 
 // Establecer el número de puerto del servidor web en 80
 WiFiClient client;
@@ -266,7 +266,7 @@ void loop(){
     client.print(" ");      //SPACE BEFORE HTTP/1.1
     client.print("HTTP/1.1");
     client.println();
-    client.println("Host: 192.168.0.19");
+    client.println("Host: YOUR HOST");
     client.println("Connection: close");
     client.println();
   } else {
