@@ -49,12 +49,7 @@ uint8_t DHTPin = 4;
 
 // Initialize DHT sensor.
 DHT dht(DHTPin, DHTTYPE);              
-/*
-float Temperature;
-float Humidity;
-float altitude;
-float pressure;
-int lluvia;*/
+
 
 // Variable para almacenar la solicitud HTTP
 String header;
